@@ -1,6 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.douzone</groupId>
-  <artifactId>git_test</artifactId>
+  <artifactId>javastudy</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>  
+	<modules>
+		<module>practice01</module>
+		<module>practice02</module>
+		<module>practice03</module>
+		<module>practice04</module>
+		<module>practice05</module>
+		<module>chapter03</module>
+		<module>practice3</module>
+		<module>practice4</module>
+		<module>practice1</module>
+		<module>practice2</module>
+		<module>chapter04</module>
+		<module>practice5</module>
+		<module>network</module>
+	</modules>
 </project>
